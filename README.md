@@ -22,8 +22,7 @@ A RESTful API built with FastAPI and MongoDB for managing products. This API pro
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
-cd product-api
+git clone jshankar27/product-api_mongo_fastapi_app
 ```
 
 2. Create and activate a virtual environment:
@@ -49,7 +48,7 @@ The API uses the following environment variables:
 uvicorn app.main:app --reload
 ```
 
-The API will be available at `http://localhost:8000`
+The API will be available at `http://localhost:8080`
 
 ## API Endpoints
 
@@ -142,30 +141,23 @@ The API returns appropriate HTTP status codes and error messages:
 4. Push to the branch
 5. Create a Pull Request
 
-
-# Starting virtual env
-python3 -m venv venv
-
-# Activating the virtual env
-source venv/bin/activate
-
-# Installing libraries
-pip install -r requirements.txt
-
-# Starting the app
-python3 app/main.py
-
-# Deactivating the virtual env
+## Deactivating the virtual env
+```
 deactivate
-
+```
 
 # MONGO DB installation:
+```
 brew tap mongodb/brew
 brew install mongodb-community
 brew services start mongodb-community
-
+```
 ## to stop mongo services:
+```
 brew services stop mongodb-community
+```
 
 # Install mongo compass using homebrew
+```
 brew install --cask mongodb-compass
+```
